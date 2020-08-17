@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables in Javascript</title>
+    </head>
+
+    <body>
+        <h1>Variables in Javascript</h1>
+    </body>
+
+    <script>
+
+        var count = 0
+
+        function init(){
+            const var3 = "Four";
+
+            if(count == 0) {
+                var var1 = "Zero";
+                let var2 = "One";
+            }
+
+            var1 = "Two" // valid
+            console.log("the number is",var1)
+            console.log("the number is",var2) // invalid
+            var3 = "Five" // invalid
+            console.log("the number is",var3)
+
+        }
+
+        init()
+
+    </script>
+</html>
