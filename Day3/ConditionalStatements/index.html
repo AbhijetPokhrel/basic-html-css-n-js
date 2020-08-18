@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variables in Javascript</title>
+</head>
+
+<body>
+    <h1>Variables in Javascript</h1>
+</body>
+
+<script>
+
+    var days = [0, 1, 2, 3, 4, 5, 6]
+
+    function init() {
+
+        days.forEach(function (element, index) {
+            if (element == 0) {
+                console.log("Saturday")
+            } else if (element == 1) {
+                console.log("Sunday")
+            } else if (element == 2) {
+                console.log("Monday")
+            } else {
+                console.log("Other days")
+            }
+        })
+
+        days.forEach(function (element, index) {
+            switch (element) {
+                case 0:
+                    console.log("Saturday")
+                    break;
+                case 1:
+                    console.log("Sunday")
+                    break;
+                case 2:
+                    console.log("Monday")
+                    break;
+                default:
+                    console.log("Other days")
+            }
+        })
+
+    }
+
+    init()
+
+</script>
+
+</html>

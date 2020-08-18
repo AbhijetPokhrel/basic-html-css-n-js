@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variables in Javascript</title>
+</head>
+
+<body>
+    <h1>Variables in Javascript</h1>
+</body>
+
+<script>
+
+    var days = ["Saturday", "Sunday", "Monday", "Tuesday"]
+
+    function init() {
+
+        console.log("For Loop Baisc -------------- ")
+        for (let i = 0; i < days.length; i = i + 2) {
+            console.log("index : " + i + " Day : " + days[i])
+        }
+
+        console.log("For In Array -------------- ")
+        for (let index in days) {
+            console.log("index : " + index + " Day : " + days[index])
+        }
+
+        console.log("For Of Array -------------- ")
+        for (let day of days) {
+            console.log("Day : " + day)
+        }
+
+        console.log("For each Array -------------- ")
+        days.forEach(function (item, index) {
+            console.log("index : " + index + " Day : " + item)
+        })
+    }
+
+    init()
+
+</script>
+
+</html>
