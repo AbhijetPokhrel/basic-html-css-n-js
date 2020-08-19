@@ -16,3 +16,8 @@ Basic HTML, CSS and JS tutorial 7 day Series
 
     We learn about conditional statements and loops in image gallery
 
+## Day 4
+### Events and Event loops
+
+    We learn about conditional statements and loops in image gallery
+

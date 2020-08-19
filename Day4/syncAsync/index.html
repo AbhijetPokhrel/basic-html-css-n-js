@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variables in Javascript</title>
+</head>
+
+<body>
+    <h1>Variables in Javascript</h1>
+</body>
+
+<script>
+
+
+    function init() {
+        console.log("Synchronous Call....")
+        sayHello();
+        console.log("Thankyou...")
+
+        console.log("Asynchronous Call....")
+        setTimeout(sayHello, 0)
+        console.log("Thankyou...")
+    }
+
+    function sayHello() {
+        for (let i = 0; i < 100000000; i++) {
+        }
+        console.log("Hello ....")
+    }
+
+    init()
+
+</script>
+
+</html>
