@@ -21,3 +21,8 @@ Basic HTML, CSS and JS tutorial 7 day Series
 
     We learn about conditional statements and loops in image gallery
 
+## Day 5
+### Object, Prototypes and Inheritance
+
+    We learn about prototypes, objects and its properties along with some basic inheritace in Javascript
+

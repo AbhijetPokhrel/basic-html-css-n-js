@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variables in Javascript</title>
+</head>
+
+<body>
+    <h1>Variables in Javascript</h1>
+</body>
+
+<script>
+
+
+    function init() {
+
+        let dog = {
+            name: "Tom",
+            color: "black",
+            breed: "German Sephard"
+        }
+
+        let mammal = {
+            hasHair: true,
+            canGiveBirth: true
+        }
+
+        console.log("Name of dog is : ", dog.name)
+        console.log("Color of the dog is : ", dog.color)
+        console.log("toString : ", dog.toString())
+
+        // Dog inherits mammal properties
+        dog.__proto__ = mammal
+        console.log(dog)
+
+        console.log("After inheritance ....")
+        console.log("Can dog give birth ? ", dog.canGiveBirth)
+
+        let dog1 = new Dog("Harry", "Grey", "Bhote")
+        let dog2 = new Dog("Harry1", "Green", "Japanees breed")
+        console.log(dog1)
+
+        console.log("Dog1 name : ", dog1.name)
+        console.log("Dog1 name : ", dog1.getName())
+        console.log("Dog2 name : ", dog2.getName())
+        dog2.setName("dog2")
+        console.log("Dog2 name : ", dog2.getName())
+
+        // Creating object via class
+        let bike = new Automobile("NS200", "Bajaj")
+        console.log(bike)
+    }
+
+    function Dog(name, color, breed) {
+        this.name = name
+        this.color = color
+        this.breed = breed
+    }
+
+    Dog.prototype.getName = function () {
+        return this.name
+    }
+
+    Dog.prototype.setName = function (name) {
+        this.name = name
+    }
+
+    class Automobile {
+        constructor(name, brand) {
+            this.name = name
+            this.brand = brand
+        }
+
+        getName() {
+            return this.name
+        }
+    }
+
+    init()
+
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-color: #7757f4ff;
+}
+
+.container {
+    margin: 40px;
+}
+
+#title {
+    font-size: 38px;
+}
+
+.image-holder {
+    width: 250px;
+    height: 280px;
+    float: left;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.image-holder>img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.image-holder:hover {
+    transform: scale(1.05);
+}
+
+.description-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #303030d6;
+    display: none;
+}
+
+.description-holder>.description {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+#descriptionContainer>img {
+    width: 200px;
+    height: 280px;
+    object-fit: contain;
+}
