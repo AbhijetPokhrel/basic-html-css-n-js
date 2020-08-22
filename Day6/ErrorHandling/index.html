@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Tutorial</title>
+</head>
+
+<body>
+    <h1>Javascript Tutorial</h1>
+</body>
+
+<script>
+
+
+    function init() {
+
+        try {
+            console.log("value is  : ", a)
+        } catch (error) {
+            console.log({error})
+        }
+
+        try {
+            let num1 = divide(6, 3)
+            console.log("num1  = ", num1)
+
+            let num2 = divide(6, 0)
+            console.log("num2 = ", num2)
+        } catch (error) {
+            console.log("Division error : ", error)
+        }
+
+        console.log("code after error")
+        let b = "Hello"
+        console.log(b)
+
+    }
+
+    function divide(a, b) {
+        if (b == 0) throw new Error("Denominator should not be zero")
+        return a / b
+    }
+
+    init()
+
+</script>
+
+</html>
